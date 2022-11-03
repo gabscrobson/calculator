@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    padding-top: 10vh;
+    background-color: #3B4664;
+    color: #FFFFFF;
+}
+
+body, button {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+main {
+    max-width: 430px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ======= HEADER ======= */
+header {
+    padding: 15px 0px;
+    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
+
+/* ======= SCREEN ======= */
+#screen {
+    background-color: #191F32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-height: calc(40px + 2.7rem);
+    font-size: 1.8em;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/* ======= BUTTONS ======= */
+#buttons {
+    background-color: #242E44;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: grid;
+        grid-template-columns: repeat(4, minmax(40px, 100px));
+        justify-content: center;
+}
+
+button {
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    border-bottom: 5px solid rgb(170, 170, 170)
+}
+
+button:active {
+    border: none;
+    height: 55px;
+    transform: translateY(5px);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.small {
+    font-size:.8em;
+}
+
+.color1 {
+    color: white;
+    background-color: #637396;
+    border-bottom: 5px solid #4e5b77;
+}
+
+.color2 {
+    color: white;
+    background-color: #D13F30;
+    border-bottom: 5px solid #962d21;
+}
+
+/* ======= GITHUB ======= */
+#github {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+}
+
+#github:hover {
+    opacity: .75;
+}
