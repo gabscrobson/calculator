@@ -29,8 +29,10 @@ equalButton.addEventListener('click', equal)
 
 delButton.addEventListener('click', del)
 
+keyboardListener()
 
-// FUNCTIONS
+
+// CALCULATOR FUNCTIONS
 function clear() {
     operand = ''
     updateDisplay()
@@ -42,7 +44,7 @@ function del() {
 }
 
 function equal() {
-    operand = eval(operand)
+    operand = myToFixed(eval(operand)).toString() // myToFixed() to limit decimal cases, toString() to converto to string
     updateDisplay()
 }
 
@@ -54,7 +56,8 @@ function addNumber(number) {
 
 function addOperation(operation) {
     if(getLast() != '+' && getLast() != '-' && getLast() != '/' && getLast() != '*') {
-        operand += operation
+        if(!((operation == '*' || operation == '/') && getLast() == undefined)) // * and / cant be at first
+            operand += operation
     }
     updateDisplay()
 }
@@ -63,6 +66,15 @@ function updateDisplay() {
     textDiv.innerText = operand
 }
 
+// MY FUNCTIONS
 function getLast() {
     return operand[operand.length - 1]
+}
+
+function myToFixed(num) {
+    return Math.round(num * 10000) / 10000
+}
+
+function keyboardListener() {
+    // TO DO
 }
