@@ -36,7 +36,7 @@ header {
     background-color: #191F32;
     padding: 10px 20px;
     border-radius: 5px;
-    min-height: calc(40px + 2.7rem);
+    min-height: calc(41px + 2.7rem);
     font-size: 1.8em;
     text-align: right;
     word-wrap: break-word;
@@ -89,16 +89,4 @@ button:active {
     color: white;
     background-color: #D13F30;
     border-bottom: 5px solid #962d21;
-}
-
-/* ======= GITHUB ======= */
-#github {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-}
-
-#github:hover {
-    opacity: .75;
 }
