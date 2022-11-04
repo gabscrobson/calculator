@@ -53,7 +53,7 @@ function addNumber(number) {
 }
 
 function addOperation(operation) {
-    if(getLast() != '+' || getLast() != '-' || getLast() != '/' || getLast() != '*') {
+    if(getLast() != '+' && getLast() != '-' && getLast() != '/' && getLast() != '*') {
         operand += operation
     }
     updateDisplay()
