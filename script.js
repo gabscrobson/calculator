@@ -54,8 +54,7 @@ function addNumber(number) {
 
 function addOperation(operation) {
     if(getLast() != '+' || getLast() != '-' || getLast() != '/' || getLast() != '*') {
-        previousOperand += currentOperand + ' ' + operation + ' '
-        currentOperand = ''
+        operand += operation
     }
     updateDisplay()
 }

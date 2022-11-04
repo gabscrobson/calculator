@@ -9,6 +9,7 @@ body {
     padding-top: 10vh;
     background-color: #3B4664;
     color: #FFFFFF;
+    height: 100vh;
 }
 
 body, button {
@@ -61,8 +62,8 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    outline-offset: 4px;
-    border-bottom: 5px solid rgb(170, 170, 170)
+    border-bottom: 5px solid rgb(170, 170, 170);
+    color: black;
 }
 
 button:active {
